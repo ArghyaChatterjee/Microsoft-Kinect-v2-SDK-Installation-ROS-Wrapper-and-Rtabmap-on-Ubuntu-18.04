@@ -8,7 +8,7 @@ It just listens to two ROS topics and displays a the color with the overlayed co
 
 ## Dependencies
 
-- ROS Hydro/Indigo
+- ROS Melodic
 - OpenCV
 - PCL
 
