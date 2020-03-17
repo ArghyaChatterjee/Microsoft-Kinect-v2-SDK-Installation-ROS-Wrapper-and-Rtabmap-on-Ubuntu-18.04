@@ -1,10 +1,8 @@
 # ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04
 1. Download libfreenect2:<br>
-
 ```git clone https://github.com/OpenKinect/libfreenect2.git```
 2. Before installing a good idea to install opencv then rely as follows:
 - one way: <br>
-
 ``` sudo apt-get install build-essential cmake pkg-config libturbojpeg libjpeg-turbo8-dev mesa-common-dev freeglut3-dev libxrandr-dev libxi-dev```
 - another way:
 ```
@@ -28,7 +26,6 @@ make
 sudo make install
 ```
 (Note: you can get an error like "CMake Error at /usr/share/cmake-3.9/Modules/FindPackageHandleStandardArgs. cmake:137 (message):Could NOT find TurboJPEG (missing: TurboJPEG_INCLUDE_DIRS TURBOJPEG_WORKS)...), Then try: <br>
-
 ```sudo apt-get install libturbojpeg0-dev``` <br>
 After installing, please delete the build directory and rebuild following the instrustions from 3. <br>
 
@@ -70,7 +67,6 @@ source ~/catkin_ws/devel/setup.bash
 roslaunch kinect2_bridge kinect2_bridge.launch
 ```
 In another terminal, execute: <br>
-
 ```roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd``` <br>
 
 10. If you want to see the rtabmap with rviz:
