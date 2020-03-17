@@ -1,11 +1,5 @@
 # Kinect2 Bridge
 
-## Maintainer
-
-- [Thiemo Wiedemeyer](https://ai.uni-bremen.de/team/thiemo_wiedemeyer) <<wiedemeyer@cs.uni-bremen.de>>, [Institute for Artificial Intelligence](http://ai.uni-bremen.de/), University of Bremen
-
-*Note:* ***Please use the GitHub issues*** *for questions and problems regarding the iai_kinect2 package and its components.* ***Do not write emails.***
-
 ## Description
 
 This is a bridge between [libfreenect2](https://github.com/OpenKinect/libfreenect2) and ROS.
@@ -19,7 +13,7 @@ This is a bridge between [libfreenect2](https://github.com/OpenKinect/libfreenec
 
 ## Dependencies
 
-- ROS Hydro/Indigo
+- ROS Melodic
 - OpenCV
 - [libfreenect2](https://github.com/OpenKinect/libfreenect2)
 
