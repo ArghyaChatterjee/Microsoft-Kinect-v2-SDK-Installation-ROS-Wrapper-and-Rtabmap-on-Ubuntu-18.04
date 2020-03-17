@@ -80,15 +80,15 @@ If you want to see the rtabmap with custom rviz (prepared by me), open a new ter
 ```
 cd ~/catkin_ws
 source ~/catkin_ws/devel/setup.bash
+roslaunch kinect2_bridge kinect2_bridge_custom_rviz_qhd.launch  #to open qhd video stream in ROS.
+roslaunch kinect2_bridge kinect2_bridge_custom_rviz_hd.launch   #to open hd video stream in ROS.
+roslaunch kinect2_bridge kinect2_bridge_custom_rviz_sd.launch   #to open sd video stream in ROS.
 ```
-```roslaunch kinect2_bridge kinect2_bridge_custom_rviz_qhd.launch``` to open qhd video stream in ROS.
-```roslaunch kinect2_bridge kinect2_bridge_custom_rviz_hd.launch``` to open hd video stream in ROS.
-```roslaunch kinect2_bridge 
-
-
-
-
-
+# Special thanks to:
+1. https://github.com/OpenKinect/libfreenect2
+2. https://github.com/code-iai/iai_kinect2
+3. https://github.com/Kinect/PyKinect2
+4. https://github.com/occipital/OpenNI2
 
 
 
