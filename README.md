@@ -28,9 +28,11 @@ sudo make install
 (Note: you can get an error like "CMake Error at /usr/share/cmake-3.9/Modules/FindPackageHandleStandardArgs. cmake:137 (message):Could NOT find TurboJPEG (missing: TurboJPEG_INCLUDE_DIRS TURBOJPEG_WORKS)...), Then try: <br>
 ```sudo apt-get install libturbojpeg0-dev``` <br>
 After installing, please delete the build directory and rebuild following the instrustions from 3. <br>
-  4. Set the udev rules for communicating with device: <br>
+
+4. Set the udev rules for communicating with device: <br>
 ```sudo cp libfreenect2/platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/``` <br>
-  5. Replug the Microsoft Kinect Xbox One. Then run in the build directory:
+
+5. Replug the Microsoft Kinect Xbox One. Then run in the build directory:
 - ```./bin/Protonect``` <br>
 (Note: If you are more advanterous), please run:
 - ```./bin/Protonect gl``` to test OpenGL support.
@@ -66,7 +68,8 @@ roslaunch kinect2_bridge kinect2_bridge.launch
 ```
 In another terminal, execute: <br>
 ```roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd``` <br>
-  10. If you want to see the rtabmap with rviz:
+
+10. If you want to see the rtabmap with rviz:
 - One way:
 For openning with default rviz, move to /opt/ros/melodic/share/rtabmap_ros/launch directory and open rgbd_mapping_kinect2.launch file. Change rviz (line number 25) to "true" and save the file. Now open a new terminal and make sure no other program is running. Execute:
 ```
