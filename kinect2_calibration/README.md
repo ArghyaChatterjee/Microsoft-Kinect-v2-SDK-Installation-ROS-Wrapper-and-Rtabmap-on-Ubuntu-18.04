@@ -6,7 +6,7 @@ This tool uses OpenCV to calibrate two cameras to each other. It is specially de
 
 ## Dependencies
 
-- ROS Hydro/Indigo
+- ROS Melodic
 - OpenCV
 
 *for the ROS packages look at the package.xml*
