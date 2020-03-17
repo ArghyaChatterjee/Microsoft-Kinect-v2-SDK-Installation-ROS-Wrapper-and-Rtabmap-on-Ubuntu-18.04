@@ -14,22 +14,24 @@ another way:
 ```sudo apt-get install libusb-1.0-0-dev```
 }
 3. Start Installation (It will be installed by default in /usr/local):
-```cd libfreenect2```
-```mkdir build``` 
-```cd build```
-```cmake ..```
-```make```
-```sudo make install```
-{Note: A problem can arise like "CMake Error at /usr/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake:137 (message):Could NOT find TurboJPEG (missing: TurboJPEG_INCLUDE_DIRS TURBOJPEG_WORKS, Then try:
-```sudo apt-get install libturbojpeg0-dev```
+```cd libfreenect2
+mkdir build 
+cd build
+cmake ..
+make
+sudo make install
+```
+(Note: A problem can arise like "CMake Error at /usr/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake:137 (message):Could NOT find TurboJPEG (missing: TurboJPEG_INCLUDE_DIRS TURBOJPEG_WORKS, Then try:)
+- `sudo apt-get install libturbojpeg0-dev`
 After installing, please delete the build directory and rebuild following the instrustions from 3
-}
 4. Set the udev rules for communicating with device:
-```sudo cp libfreenect2/platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/```
+- `sudo cp libfreenect2/platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/`
 5. Replug the Microsoft Kinect Xbox One. Then run in the build directory:
-```./bin/Protonect```
-(Note: If you are more advanterous, please run:
-```./
+- `./bin/Protonect`
+(Note: If you are more advanterous, please run:)
+- `./bin/Protonect gl` to test OpenGL support
+- `./bin/Protonect cl` to test OpenCL support.
+- `./bin/Protonect cpu` to test CPU support.
 
 
 
