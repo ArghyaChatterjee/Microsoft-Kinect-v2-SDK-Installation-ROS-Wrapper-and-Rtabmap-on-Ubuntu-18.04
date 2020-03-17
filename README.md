@@ -57,19 +57,33 @@ On another terminal, execute: <br>
 source ~/catkin_ws/devel/setup.bash
 rosrun kinect2_viewer kinect2_viewer
 ```
-You should have seen the screen. cheers!!
+You should have seen the screen. cheers!! <br>
 9. If you want to see the rtabmap, open a new terminal and make sure no other program is running. Execute:
-```sudo apt-get install ros-melodic-rtabmap-ros```
-Then in one terminal, execute: 
 ```
+sudo apt-get install ros-melodic-rtabmap-ros
 cd ~/catkin_ws
 source ~/catkin_ws/devel/setup.bash
 roslaunch kinect2_bridge kinect2_bridge.launch
 ```
 In another terminal, execute: <br>
-```roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd```
-10. If you want to see the rtabmap with rviz, open a new terminal and make sure no other program is running. Execute:
-
+```roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd``` <br>
+10. If you want to see the rtabmap with rviz
+- One way:
+For openning with default rviz, move to /opt/ros/melodic/share/rtabmap_ros/launch directory and open rgbd_mapping_kinect2.launch file. Change rviz (line number 25) to "true" and save the file. Now open a new terminal and make sure no other program is running. Execute:
+```
+cd ~/catkin_ws
+source ~/catkin_ws/devel/setup.bash
+roslaunch kinect2_bridge kinect2_bridge_default_rviz.launch
+``` 
+- Second way: 
+If you want to see the rtabmap with custom rviz (prepared by me), open a new terminal and make sure no other program is running. Execute:
+```
+cd ~/catkin_ws
+source ~/catkin_ws/devel/setup.bash
+```
+```roslaunch kinect2_bridge kinect2_bridge_custom_rviz_qhd.launch``` to open qhd video stream in ROS.
+```roslaunch kinect2_bridge kinect2_bridge_custom_rviz_hd.launch``` to open hd video stream in ROS.
+```roslaunch kinect2_bridge 
 
 
 
