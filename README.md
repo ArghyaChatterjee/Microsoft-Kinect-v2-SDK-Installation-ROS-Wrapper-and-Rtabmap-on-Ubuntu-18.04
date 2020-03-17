@@ -25,7 +25,7 @@ cmake ..
 make
 sudo make install
 ```
-(Note: A problem can arise like "CMake Error at /usr/share/cmake-3.9/Modules/FindPackageHandleStandardArgs. cmake:137 (message):Could NOT find TurboJPEG (missing: TurboJPEG_INCLUDE_DIRS TURBOJPEG_WORKS)...), Then try: <br>
+(Note: you can get an error like "CMake Error at /usr/share/cmake-3.9/Modules/FindPackageHandleStandardArgs. cmake:137 (message):Could NOT find TurboJPEG (missing: TurboJPEG_INCLUDE_DIRS TURBOJPEG_WORKS)...), Then try: <br>
 ```sudo apt-get install libturbojpeg0-dev``` <br>
 After installing, please delete the build directory and rebuild following the instrustions from 3.
 4. Set the udev rules for communicating with device: <br>
