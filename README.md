@@ -65,10 +65,7 @@ source ~/catkin_ws/devel/setup.bash
 roslaunch kinect2_bridge kinect2_bridge.launch
 ```
 In another terminal, execute: <br>
-```
-roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd
-``` 
-<br>
+```roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd``` 
 10. If you want to see the rtabmap with rviz:
 - One way:
 For openning with default rviz, move to /opt/ros/melodic/share/rtabmap_ros/launch directory and open rgbd_mapping_kinect2.launch file. Change rviz (line number 25) to "true" and save the file. Now open a new terminal and make sure no other program is running. Execute:
