@@ -34,6 +34,7 @@ After installing, please delete the build directory and rebuild following the in
 
 5. Replug the Microsoft Kinect Xbox One. Then run in the build directory:
 - ```./bin/Protonect``` <br>
+
 (Note: If you are more advanterous), please run:
 - ```./bin/Protonect gl``` to test OpenGL support.
 - ```./bin/Protonect cl``` to test OpenCL support.
@@ -45,6 +46,7 @@ git clone https://github.com/ArghyaChatterjee/ROS-Wrapper-for-Kinect-v2-on-Ubunt
 cd iai_kinect2
 rosdep install -r --from-paths 
 ```
+
 (Note: you can get an error like "ERROR: the following packages/stacks could not have their rosdep keys resolved to system dependencies:..."), just ignore it and continue. <br>
 ```
 cd ~/catkin_ws
