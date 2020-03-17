@@ -39,11 +39,38 @@ After installing, please delete the build directory and rebuild following the in
 6. Now for ROS wrapper installation for kinect v2, execute:
 ```
 cd ~/catkin_ws/src/
-git clone https://github.com/code-iai/iai_kinect2.git
+git clone https://github.com/ArghyaChatterjee/ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04.git
 cd iai_kinect2
 rosdep install -r --from-paths 
 ```
-(Note: you can get an error like "ERROR: the following packages/stacks could not have their rosdep keys resolved to system dependencies:..."), just ignore it.
+(Note: you can get an error like "ERROR: the following packages/stacks could not have their rosdep keys resolved to system dependencies:..."), just ignore it and continue. <br>
+```
+cd ~/catkin_ws
+catkin_make -DCMAKE_BUILD_TYPE="Release"
+```
+7. After successful installation, source the environment: <br>
+```source ~/catkin_ws/devel/setup.bash``` <br> 
+8. On the same terminal, execute: <br>
+```roslaunch kinect2_bridge kinect2_bridge.launch``` <br>
+On another terminal, execute: <br>
+```
+source ~/catkin_ws/devel/setup.bash
+rosrun kinect2_viewer kinect2_viewer
+```
+You should have seen the screen. cheers!!
+9. If you want to see the rtabmap, open a new terminal and make sure no other program is running. Execute:
+```sudo apt-get install ros-melodic-rtabmap-ros```
+Then in one terminal, execute: 
+```
+cd ~/catkin_ws
+source ~/catkin_ws/devel/setup.bash
+roslaunch kinect2_bridge kinect2_bridge.launch
+```
+In another terminal, execute: <br>
+```roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd```
+10. If you want to see the rtabmap with rviz, open a new terminal and make sure no other program is running. Execute:
+
+
 
 
 
