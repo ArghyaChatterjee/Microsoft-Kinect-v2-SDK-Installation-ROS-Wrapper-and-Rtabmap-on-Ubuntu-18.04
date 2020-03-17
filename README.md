@@ -33,12 +33,12 @@ After installing, please delete the build directory and rebuild following the in
 ```sudo cp libfreenect2/platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/``` <br>
 
 5. Replug the Microsoft Kinect Xbox One. Then run in the build directory:
-- ```./bin/Protonect``` <br>
-
-(Note: If you are more advanterous), please run:
-- ```./bin/Protonect gl``` to test OpenGL support.
-- ```./bin/Protonect cl``` to test OpenCL support.
-- ```./bin/Protonect cpu``` to test CPU support.
+```
+./bin/Protonect
+./bin/Protonect gl  # to test OpenGL support.
+./bin/Protonect cl  # to test OpenCL support.
+./bin/Protonect cpu # to test CPU support.
+```
 6. Now for ROS wrapper installation for kinect v2, execute:
 ```
 cd ~/catkin_ws/src/
