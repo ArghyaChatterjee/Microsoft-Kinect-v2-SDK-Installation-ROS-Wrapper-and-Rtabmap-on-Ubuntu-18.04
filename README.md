@@ -1,4 +1,6 @@
 # ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04
+There are 3 steps: 1st you have to download the libraries, then wrap it around ROS framework & visualize with RTABMAP & Rviz.
+# Download the Libraries:
 1. Download libfreenect2:<br>
 ```git clone https://github.com/OpenKinect/libfreenect2.git```
 2. Before installing a good idea to install opencv then rely as follows:
@@ -39,7 +41,8 @@ After installing, please delete the build directory and rebuild following the in
 ./bin/Protonect cl  # to test OpenCL support.
 ./bin/Protonect cpu # to test CPU support.
 ```
-6. Now for ROS wrapper installation for kinect v2, execute:
+# ROS Wrapper Installation for kinect v2:
+1. Now for ROS wrapper installation for kinect v2, execute:
 ```
 cd ~/catkin_ws/src/
 git clone https://github.com/ArghyaChatterjee/ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04.git
@@ -52,16 +55,17 @@ rosdep install -r --from-paths
 cd ~/catkin_ws
 catkin_make -DCMAKE_BUILD_TYPE="Release"
 ```
-7. After successful installation, source the environment: <br>
+2. After successful installation, source the environment: <br>
 ```source ~/catkin_ws/devel/setup.bash``` <br> 
-8. On the same terminal, execute: <br>
+3. On the same terminal, execute: <br>
 ```roslaunch kinect2_bridge kinect2_bridge.launch``` <br>
 On another terminal, execute: <br>
 ```
 source ~/catkin_ws/devel/setup.bash
 rosrun kinect2_viewer kinect2_viewer
 ``` 
-9. If you want to see the rtabmap, open a new terminal and make sure no other program is running. Execute:
+# Visualizing RTABMAP & Rviz : 
+1. If you want to see the rtabmap, open a new terminal and make sure no other program is running. Execute:
 ```
 sudo apt-get install ros-melodic-rtabmap-ros
 cd ~/catkin_ws
@@ -71,7 +75,7 @@ roslaunch kinect2_bridge kinect2_bridge.launch
 In another terminal, execute: <br>
 ```roslaunch rtabmap_ros rgbd_mapping_kinect2.launch resolution:=hd``` <br>
 
-10. If you want to see the rtabmap with rviz:
+2. If you want to see the rtabmap with rviz:
 - One way:
 For openning with default rviz, move to /opt/ros/melodic/share/rtabmap_ros/launch directory and open rgbd_mapping_kinect2.launch file. Change rviz (line number 25) to "true" and save the file. Now open a new terminal and make sure no other program is running. Execute:
 ```
