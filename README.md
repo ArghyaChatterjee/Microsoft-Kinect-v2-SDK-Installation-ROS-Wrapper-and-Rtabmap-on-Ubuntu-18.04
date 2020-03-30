@@ -41,7 +41,7 @@ After installing, please delete the build directory and rebuild following the in
 ./bin/Protonect cl  # to test OpenCL support.
 ./bin/Protonect cpu # to test CPU support.
 ```
-# ROS Wrapper Installation for kinect v2:
+# ROS Wrapper Installation for Kinect v2:
 1. Now for ROS wrapper installation for kinect v2, execute:
 ```
 cd ~/catkin_ws/src/
