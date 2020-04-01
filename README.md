@@ -54,7 +54,8 @@ Replug the Microsoft Kinect Xbox One. Then run in the build directory:
 Now for ROS wrapper installation for kinect v2, execute:
 ```
 cd ~/catkin_ws/src/
-git clone https://github.com/ArghyaChatterjee/ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04.git
+git clone https://github.com/ArghyaChatterjee/SDK-Installation-ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04
+.git
 cd iai_kinect2
 rosdep install -r --from-paths 
 ```
