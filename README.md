@@ -1,8 +1,11 @@
 # SDK-Installation-&-ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04
-There are 3 steps: 1st you have to download the libraries, then wrap it around ROS framework & visualize with RTABMAP & Rviz.
+There are 3 steps:  
+1. Install the libraries & SDK, 
+2. Wrap it around ROS framework & 
+3. Visualize with RTABMAP & Rviz.
 # Kinect v2 SDK Installation
 ## Download the Libraries:
-Download libfreenect2:<br>
+Download libfreenect2:
 ```
 git clone https://github.com/OpenKinect/libfreenect2.git
 ```
