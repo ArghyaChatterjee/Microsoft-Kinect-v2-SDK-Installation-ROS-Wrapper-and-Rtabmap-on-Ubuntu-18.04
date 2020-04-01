@@ -50,7 +50,7 @@ Replug the Microsoft Kinect Xbox One. Then run in the build directory:
 ./bin/Protonect cpu # to test CPU support.
 ```
 # ROS Installation for Kinect v2
-## Installing ROS Wrapper
+## Installing ROS Wrapper:
 Now for ROS wrapper installation for kinect v2, execute:
 ```
 cd ~/catkin_ws/src/
