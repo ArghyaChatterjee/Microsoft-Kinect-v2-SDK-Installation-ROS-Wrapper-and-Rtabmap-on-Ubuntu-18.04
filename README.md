@@ -1,4 +1,4 @@
-# SDK-Installation-&-ROS-Wrapper-for-Kinect-v2-on-Ubuntu-18.04
+# SDK-Installation-&-ROS-Wrapper-and-rtabmap-for-Kinect-v2-on-Ubuntu-18.04
 There are 3 steps:  
 1. Install the libraries & SDK, 
 2. Wrap it around ROS framework & 
